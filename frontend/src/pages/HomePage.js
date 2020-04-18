@@ -24,14 +24,14 @@ const useStyles = makeStyles((theme) => ({
 
 const sections = [
   { title: 'Contact me', url: '#' },
-  { title: 'Work experienc', url: '#' },
+  { title: 'Work experience', url: '#' },
   { title: 'Skills', url: '#' },
   { title: 'Certificates', url: '#' },
-  { title: 'Online-store', url: '#' },
-  { title: 'Blog', url: '#' },
   { title: 'Books', url: '#' },
   { title: 'Health', url: '#' },
   { title: 'Travel', url: '#' },
+  { title: 'Blog', url: '#' },
+  { title: 'Online-store', url: '#' }
 ];
 
 const sidebar = {
@@ -64,7 +64,7 @@ const sidebar = {
       <React.Fragment>
         <CssBaseline />
         <Container maxWidth="lg">
-          <Header title="Blog" sections={sections} />
+          <Header sections={sections} />
           <main>
             {/* <MainFeaturedPost post={mainFeaturedPost} /> */}
             <Grid container spacing={4}>

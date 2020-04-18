@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     flexShrink: 0,
   },
 }));
-
+const defaulTitle = "DI LE";
 export default function Header(props) {
   const classes = useStyles();
   const { sections, title } = props;
@@ -32,16 +32,15 @@ export default function Header(props) {
   return (
     <React.Fragment>
       <Toolbar className={classes.toolbar}>
-        <Button size="small">Subscribe</Button>
         <Typography
           component="h2"
           variant="h5"
           color="inherit"
-          align="center"
+          align="left"
           noWrap
           className={classes.toolbarTitle}
         >
-          {title}
+          {title? title : defaulTitle}
         </Typography>
         <IconButton>
           <SearchIcon />
