@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
+import AppBar from '@material-ui/core/AppBar';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
@@ -22,8 +23,15 @@ const menus = [
   
 ];
 const useStyles = makeStyles((theme) => ({
+  appbar:{
+    alignItems:'center'
+  },
   toolbar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
+    padding:'5px',
+    maxWidth:'1140px',
+    width:'100%'
+    
   },
   toolbarTitle: {
     flex: 1,
@@ -48,7 +56,8 @@ export default function Header(props) {
 
   return (
     <React.Fragment>
-      <Toolbar className={classes.toolbar}>
+       <AppBar position="fixed" className={classes.appbar}>
+      <Toolbar  className={classes.toolbar} >
         <Typography
           component="h2"
           variant="h5"
@@ -74,7 +83,7 @@ export default function Header(props) {
         ))}
       </Toolbar>
       </Toolbar>
-      
+      </AppBar>
     </React.Fragment>
   );
 }

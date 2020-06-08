@@ -41,6 +41,19 @@ export default function Footer(props) {
         </Typography>
         <Copyright />
       </Container>
+      {/* <p>
+                                    <span class="span-title">Social</span>
+                                    <span class="span-icons">
+                                        <a target="_blank" href="https://www.facebook.com/" class="mdi fonts-icons mdi-facebook"></a>
+                                        <a target="_blank" href="https://twitter.com/" class="mdi fonts-icons mdi-twitter"></a>
+                                        <a target="_blank" href="https://www.instagram.com/" class="mdi fonts-icons mdi-instagram"></a>
+                                        <a target="_blank" href="https://www.linkedin.com/" class="mdi fonts-icons mdi-linkedin"></a>
+                                        <a target="_blank" href="https://www.behance.net/" class="mdi fonts-icons mdi-behance"></a>
+                                        <a target="_blank" href="https://dribbble.com/" class="mdi fonts-icons mdi-dribbble"></a>
+                                        <a target="_blank" href="https://medium.com/" class="mdi fonts-icons mdi-medium"></a>
+                                        <a target="_blank" href="https://github.com/" class="mdi fonts-icons mdi-github-circle"></a>
+                                    </span>
+                                </p> */}
     </footer>
   );
 }

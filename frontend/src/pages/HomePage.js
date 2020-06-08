@@ -7,6 +7,10 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import Header from '../components/Header';
+import Hello from '../components/Hello';
+import Skills from '../components/Skills';
+import Experiences from '../components/Experiences';
+import Contact from '../components/Contact';
 import MainFeaturedPost from './MainFeaturedPost';
 // import FeaturedPost from './FeaturedPost';
 // import Main from './Main';
@@ -21,7 +25,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(3),
   },
 }));
-
+const mainStyle = {
+  marginTop: '60px'
+}
 
 
 const sidebar = {
@@ -55,8 +61,11 @@ const sidebar = {
         <CssBaseline />
         <Container maxWidth="lg">
           <Header  />
-          <main>
-           
+          <main style={mainStyle}>
+           <Hello/>
+           <Skills/>
+           <Experiences/>
+           <Contact/>
           </main>
         </Container>
         <Footer title="Footer" description="Something here to give the footer a purpose!" />
