@@ -1,0 +1,14 @@
+.table{
+    display: table;
+}
+.row{
+    display: table-row;
+}
+.column{
+    display:table-column;
+}
+.cell{
+    display: table-cell;
+    vertical-align: top;
+    padding: 20px 20px;
+}
